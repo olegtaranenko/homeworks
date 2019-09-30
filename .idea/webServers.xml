@@ -5,7 +5,7 @@
       <webServer id="92f28ab5-07ca-4b1c-95f5-913a783dd6d5" name="olegtaranenko.ru" url="http://olegtaranenko.ru">
         <fileTransfer host="olegtaranenko.ru" port="21" rootFolder="/www/olegtaranenko.ru">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" showHiddenFiles="true" />
           </advancedOptions>
           <option name="port" value="21" />
         </fileTransfer>
