@@ -1,0 +1,107 @@
+.offer
+  background: url('../../img/offer/offer-bg.jpg') no-repeat
+  background-size: 50% auto
+  background-position-x: right
+  position: relative
+  &__section
+    padding: 63px 0 90px 0
+
+  &:before
+    content: ''
+    width: 50%
+    height: 100%
+    position: absolute
+    background-color: #FFFFFF
+    top: 0
+    left: 0
+  &-block
+    width: 50%
+    padding-right: 90px
+    position: relative
+  &-title
+    font-size: 24px
+    +bold
+  &__title
+    max-width: 365px
+    margin-bottom: 19px
+    margin-top: 17px
+    line-height: 35px
+
+  &-subtitle
+    font-size: 16px
+    margin-left: 1px
+  &__subtitle
+    +reg
+    display: block
+    max-width: 250px
+    margin-bottom: 30px
+    margin-left: -1px
+  &__input
+    margin-bottom: 30px
+    width: 240px
+    &:first-child
+      margin-right: 10px
+  &__button
+    width: 100%
+    min-height: 70px
+    //margin-bottom: 40px
+  &-notes
+    margin-top: 25px
+    display: flex
+    justify-content: space-around
+    align-items: center
+  &-note
+    line-height: 24px
+    font-size: 15px
+    &__left
+      width: 285px
+    &__right
+      width: 250px
+      margin-left: 70px
+  &-phone
+    &__layout
+      margin-left: -2px
+      margin-top: 3px
+
+@media (max-width: 1950px)
+  .offer
+    background-size: auto 100%
+
+@media (max-width: 1200px)
+  .offer
+    &__input
+      width: 100%
+      margin-bottom: 10px
+    &__button
+      font-size: 14px
+    &-notes
+      display: block
+    &-notes
+      display: block
+      margin-top: 19px
+      padding-left: 5px
+    &-note
+      &__right
+        margin-left: 0
+        margin-top: 6px
+
+@media (max-width: 768px)
+  .offer
+    background: #FFFFFF
+    &-block
+      width: 100%
+      padding-right: 0
+    &__section
+      padding-top: 36px
+      padding-bottom: 50px
+    &__title
+      font-size: 18px
+      line-height: 1.25
+      margin-bottom: 16px
+    &__subtitle
+      font-size: 14px
+      margin-bottom: 27px
+    &__button
+      font-size: 14px
+      line-height: 18px
+      margin-top: -3px
