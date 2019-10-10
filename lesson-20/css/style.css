@@ -1,14 +1,21 @@
 @font-face {
   font-family: "Museo Sans Reg";
-  src: url("../../fonts/transfonter/MuseoSansCyrl-300.eot");
-  src: local("MuseoSansCyrl-300"), url("../../fonts/transfonter/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../../fonts/transfonter/MuseoSansCyrl-300.woff") format("woff"), url("../../fonts/transfonter/MuseoSansCyrl-700.woff2") format("woff2");
+  src: url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: local("MuseoSansCyrl-300"), url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
+  font-family: "Museo Sans Reg 100";
+  src: url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-100.eot");
+  src: local("MuseoSansCyrl-100"), url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-100.eot?#iefix") format("embedded-opentype"), url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-100.woff") format("woff"), url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
   font-family: "Museo Sans Bold";
-  src: url("../../fonts/transfonter/MuseoSansCyrl-700.eot");
-  src: local("MuseoSansCyrl-700"), url("../../fonts/transfonter/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../../fonts/transfonter/MuseoSansCyrl-700.woff") format("woff"), url("../../fonts/transfonter/MuseoSansCyrl-700.woff2") format("woff2");
+  src: url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: local("MuseoSansCyrl-700"), url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -44,6 +51,21 @@ img {
 }
 .button:focus {
   outline: 0;
+}
+
+.section-title {
+  font-size: 30px;
+  line-height: 45px;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  max-width: 555px;
+}
+.section-subtitle {
+  font-family: "Museo Sans Reg 100", sans-serif;
+  font-weight: 100;
+  display: block;
+  font-size: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -292,11 +314,6 @@ img {
   width: 50%;
   padding-right: 90px;
   position: relative;
-}
-.offer-title {
-  font-size: 24px;
-  font-family: "Museo Sans Bold", sans-serif;
-  font-weight: 700;
 }
 .offer__title {
   max-width: 365px;
@@ -567,6 +584,88 @@ img {
   .portfolio-arrow {
     cursor: pointer;
   }
+}
+.price__section {
+  padding-top: 87px;
+}
+.price__title {
+  margin: auto;
+  margin-bottom: 46px;
+}
+.price__subtitle {
+  margin-bottom: 59px;
+  text-align: center;
+}
+.price__card {
+  margin-bottom: 30px;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #e8e8e8;
+}
+.card:hover {
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+.card:hover .card__image:before {
+  opacity: 1;
+  transition: 0.2s;
+}
+.card__text {
+  padding: 38px 40px 43px 40px;
+}
+.card__title {
+  font-family: "Museo Sans Reg 100", sans-serif;
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 29px;
+  font-size: 18px;
+}
+.card__image {
+  position: relative;
+}
+.card__image img {
+  display: block;
+}
+.card__image:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+}
+.card__link {
+  display: inline-block;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  position: relative;
+}
+.card__link:hover:after {
+  height: 12px;
+}
+.card__link:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: 0.2s;
+  bottom: -4px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ffd200;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=style.css.map */
