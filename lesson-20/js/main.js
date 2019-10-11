@@ -2,6 +2,9 @@
  * производим все действия только после того, как структура документа будет полностью готова
  */
 $(document).ready(function () {
+
+  new WOW().init();
+
   let jumpBt = $('.jump-btn');
 
   jumpBt.click(function () {

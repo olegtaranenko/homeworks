@@ -36,24 +36,6 @@ img
     display: block
     font-size: 20px
 
-
-@media (max-width: 1200px)
-  .container
-    max-width: 760px
-
-@media (max-width: 768px)
-  .container
-    max-width: 580px
-    width: 100%
-    padding-right: 20px
-    padding-left: 20px
-
-@media (max-width: 420px)
-  .container
-    max-width: 277px
-    padding-right: 0
-    padding-left: 0
-
 .input
   border: 1px solid $border-input
   border-radius: 10px
@@ -73,7 +55,6 @@ img
 
 .jump-btn
   position: fixed
-  //padding: 25px
   opacity: 80%
   bottom: 10px
   left: 10px
@@ -81,3 +62,32 @@ img
   border-radius: 50%
   height: 56px
   width: 56px
+
+@media (max-width: 1200px)
+  .container
+    max-width: 760px
+  .section
+    &__title
+      font-size: 24px
+    &__title
+      font-size: 16px
+
+@media (max-width: 768px)
+  .container
+    max-width: 580px
+    width: 100%
+    padding-right: 20px
+    padding-left: 20px
+
+@media (max-width: 420px)
+  .container
+    max-width: 277px
+    padding-right: 0
+    padding-left: 0
+  .section
+    &-title
+      font-size: 18px
+      line-height: 1.25
+    &-subtitle
+      font-size: 14px
+
